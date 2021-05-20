@@ -137,16 +137,13 @@ img {
 /* ------HERO------ */
 .hero {
   max-width: 1600px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  background-color: var(--third-background-color);
 }
 .hero-title {
   width: 696px;
@@ -272,7 +269,6 @@ img {
   text-decoration: none;
   fill: var(--icon-color);
 }
-
 .social-link:hover,
 .social-link:focus {
   border-radius: 50%;
@@ -285,7 +281,6 @@ img {
 .section.team {
   background-color: var(--second-background-color);
 }
-
 .section.team,
 .section.clients {
   padding-top: 94px;
@@ -314,8 +309,8 @@ img {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-/* ------PORTFOLIO------ */
 
+/* ------PORTFOLIO------ */
 .portfolio.section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -433,7 +428,6 @@ img {
   background: var(--footer-link-bgc);
   border-radius: 50%;
 }
-
 .footer-social-link:hover,
 .footer-social-link:focus {
   border-radius: 50%;
@@ -443,6 +437,7 @@ img {
 .footer-icons {
   padding-top: 12px;
 }
+
 /* ------BUTTONS------ */
 .first-button {
   display: inline-block;
