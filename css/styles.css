@@ -12,6 +12,7 @@
   --portfolio-border: #eeeeee;
   --icon-color: #afb1b8;
   --footer-link-bgc: rgba(255, 255, 255, 0.1);
+  --hero-bgc: #c4c4c4;
   --card-set-gap: 30px;
 }
 body {
@@ -115,6 +116,8 @@ img {
 }
 .mail,
 .tel {
+  display: inline-flex;
+  align-items: center;
   color: inherit;
 
   font-weight: 500;
@@ -137,12 +140,14 @@ img {
 /* ------HERO------ */
 .hero {
   max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   background-size: cover;
+  background-color: var(--hero-bgc);
   text-align: center;
 }
 .hero-title {
@@ -195,12 +200,13 @@ img {
   margin-right: 30px;
 }
 .feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   background-color: var(--second-background-color);
   border-radius: 4px;
-  padding: 25px 100px;
-  text-align: center;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
 }
 .task.section {
   padding-top: 47px;
@@ -262,12 +268,13 @@ img {
   display: flex;
 }
 .social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
   width: 44px;
   height: 44px;
-  padding: 12px;
-  text-decoration: none;
-  fill: var(--icon-color);
+  border-radius: 50%;
 }
 .social-link:hover,
 .social-link:focus {
@@ -293,8 +300,9 @@ img {
   display: flex;
 }
 .clients-list-link {
-  padding: 16px 32px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
@@ -411,6 +419,7 @@ img {
 }
 .footer {
   display: flex;
+  align-items: baseline;
 }
 .footer-contacts {
   margin-right: 70px;
@@ -419,10 +428,11 @@ img {
   display: flex;
 }
 .footer-social-link {
-  display: block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 44px;
   height: 44px;
-  padding: 12px;
   text-decoration: none;
   fill: var(--primary-white-color);
   background: var(--footer-link-bgc);
@@ -434,10 +444,6 @@ img {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
-.footer-icons {
-  padding-top: 12px;
-}
-
 /* ------BUTTONS------ */
 .first-button {
   display: inline-block;
